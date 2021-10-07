@@ -1,11 +1,11 @@
-// import logo from './logo.svg';
-// import './App.css';
 
-// function App() {
+// // import './App.css';
+
+// function Home() {
 //   return (
 //     <div className="App">
 //       <header className="App-header">
-//       <h1>Kristen's Website</h1>
+//       <h1>Home</h1>
 //         <img src={logo} className="App-logo" alt="logo" />
 //         <p>
 //           Edit <code>src/App.js</code> and save to reload.
@@ -23,16 +23,4 @@
 //   );
 // }
 
-// export default App;
-
-import * as React from 'react';
-import ReactDOM from 'react-dom';
-import Button from '@mui/material/Button';
-
-function App() {
-  return <Button variant="contained">Hello World</Button>;
-}
-
-export default App;
-
-// ReactDOM.render(<App />, document.querySelector('#app'));
+// export default Home;

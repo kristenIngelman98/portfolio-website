@@ -3,9 +3,9 @@ import ProjectCard from '../components/ProjectCard';
 
 function Projects() {
   return (
-    <div className="App">
+    <div className="projects_wrapper">
      <h1>projects page</h1>
-     <ProjectCard />
+        <ProjectCard />
     </div>
   );
 }

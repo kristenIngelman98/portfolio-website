@@ -94,9 +94,11 @@ body {
 /* Project Card */
 
 .card_wrapper {
-  display: grid;
+  display: flex;
+  justify-content: space-around;
+  /* display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 20px; */
   /* align-items: center; */
   align-content: center;
 }
@@ -106,6 +108,14 @@ body {
 .footer {
   background-color: pink;
 }
+
+.footer p {
+  margin: 0;
+}
+
+/* .footer__content {
+  margin: 0;
+} */
 
 
 /* home page */
@@ -170,3 +180,20 @@ img {
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 }
+
+/* projects page */
+
+.projects_wrapper {
+  background-color: pink;
+  /* background-image: url(../src/components/data/code.jpg); */
+  /* background-size: cover; Resize the background image to cover the entire container */
+  /* height: 100vh;
+  color: #E0E1DD; */
+}
+
+/* .project_card {
+  border-radius: 50%;
+} */
+/* .MuiPaper-root {
+  border-radius: 50%;
+} */

@@ -17,12 +17,13 @@ export default function ProjectCard() {
     {ProjectData.map((projectDetail, index) => {
         console.log(projectDetail.id)
         return (
-        <Card key={projectDetail.id} sx={{ maxWidth: 345 }}>
+        <Card key={projectDetail.id} 
+              sx={{ maxWidth: 345 }, {borderRadius: '40px'}}>
             <CardMedia
                 component="img"
                 alt="green iguana"
                 height="140"
-                image={projectDetail.image} />
+                image={projectDetail.image}/>
             <CardContent>
             <Typography gutterBottom variant="h5" component="div">
                 {projectDetail.title}

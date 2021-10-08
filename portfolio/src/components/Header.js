@@ -7,7 +7,7 @@ function Header() {
     return (
       <div className="header">
         <h1 className="main_title">Kristen Ingelman</h1>
-        <div>
+        <div className="header_icons">
             <LinkedInIcon />
             <GitHubIcon />
         </div>

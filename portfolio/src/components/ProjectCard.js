@@ -5,29 +5,45 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { ProjectData } from '../components/data/ProjectData';
+// import { Link } from "react-router-dom";
 
 export default function ProjectCard() {
+
+  const handleClick = () => {
+      console.log("clicked")
+  }
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        alt="green iguana"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
+   <div className="card_wrapper">
+    {ProjectData.map((projectDetail, index) => {
+        return (
+        <Card key={projectDetail.id} sx={{ maxWidth: 345 }}>
+            <CardMedia
+                component="img"
+                alt="green iguana"
+                height="140"
+                image={projectDetail.image} />
+            <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+                {projectDetail.title}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+                {projectDetail.description}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+                {projectDetail.description}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+                {projectDetail.description}
+            </Typography>
+            </CardContent>
+            <CardActions>
+                <Button onClick={handleClick} size="medium">Live Site</Button>
+                <Button size="medium">Learn More</Button>
+            </CardActions>
+        </Card>  
+        )
+    })}
+    </div>
   );
 }

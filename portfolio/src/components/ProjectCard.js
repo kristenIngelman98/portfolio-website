@@ -16,6 +16,7 @@ export default function ProjectCard() {
   return (
    <div className="card_wrapper">
     {ProjectData.map((projectDetail, index) => {
+        console.log(projectDetail.id)
         return (
         <Card key={projectDetail.id} sx={{ maxWidth: 345 }}>
             <CardMedia

@@ -48,12 +48,4 @@ export const ProjectData =
     "readMore": "read more",
     "projectWebsite": "https://facebook.com"
   },
-  {
-    "date": "December 19th, 2020",
-    "image": example,
-    "title": "App",
-    "description": "add recipe description here",
-    "readMore": "read more",
-    "recipeWebsite": "https://facebook.com"
-  },
 ]

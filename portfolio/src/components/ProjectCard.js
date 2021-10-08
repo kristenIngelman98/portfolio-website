@@ -39,7 +39,9 @@ export default function ProjectCard() {
             </Typography>
             </CardContent>
             <CardActions>
-                <Button onClick={handleClick} size="medium">Live Site</Button>
+                <a target="_blank" href="https://github.com/kristenIngelman98">
+                    <Button size="medium">Project Website</Button>
+                </a>
                 <Button size="medium">Learn More</Button>
             </CardActions>
         </Card>  

@@ -10,7 +10,7 @@ export const ProjectData =
     "title": "Filmate",
     "description": "Ingredients: coconut yogurt, rasberries, coconut flakes, granola",
     "readMore": "read more",
-    "projectWebsite": "recipe-individual"
+    "projectWebsite": "https://filmate.ca/"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@ export const ProjectData =
     "title": "Patch",
     "description": "add recipe description here",
     "readMore": "read more",
-    "projectWebsite": "https://facebook.com"
+    "projectWebsite": "https://patch-app.ca/"
   },
   {
     "id": 3,
@@ -28,7 +28,7 @@ export const ProjectData =
     "title": "Langara WMDD Site",
     "description": "add recipe description here",
     "readMore": "read more",
-    "projectWebsite": "https://facebook.com"
+    "projectWebsite": "https://langara-app.vercel.app/"
   },
   {
     "id": 4,

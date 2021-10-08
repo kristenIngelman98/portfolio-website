@@ -6,7 +6,6 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { ProjectData } from '../components/data/ProjectData';
-// import { Link } from "react-router-dom";
 
 export default function ProjectCard() {
 
@@ -39,7 +38,7 @@ export default function ProjectCard() {
             </Typography>
             </CardContent>
             <CardActions>
-                <a target="_blank" href="https://github.com/kristenIngelman98">
+                <a target="_blank" href={projectDetail.projectWebsite}>
                     <Button size="medium">Project Website</Button>
                 </a>
                 <Button size="medium">Learn More</Button>

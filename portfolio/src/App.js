@@ -1,38 +1,17 @@
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//       <h1>Kristen's Website</h1>
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
-
 import * as React from 'react';
-import ReactDOM from 'react-dom';
-import Button from '@mui/material/Button';
+import Header from '../src/components/Header';
+import Menu from './home/Menu';
+import Footer from '../src/components/Footer';
+
 
 function App() {
-  return <Button variant="contained">Hello World</Button>;
+  return (
+    <div>
+      <Header />
+      <Menu />
+      <Footer />
+    </div>
+  )
 }
 
 export default App;
-
-// ReactDOM.render(<App />, document.querySelector('#app'));

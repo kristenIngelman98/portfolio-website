@@ -43,14 +43,34 @@ body {
 
 }
 .app {
-  background-color: #E0E1DD;
+  /* background-color: #E0E1DD; */
   /* font-family: 'Open Sans Condensed', sans-serif; */
   /* background-color: #0D1B2A; */
 }
 
+.app ul {
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+}
+
+.app a {
+  text-decoration: none;
+  color: pink;
+}
+
+.app li {
+}
+
 .header {
-  background-color: #0D1B2A;
-  color: #E0E1DD;
+  /* background-color: #0D1B2A; */
+  /* color: #E0E1DD; */
   display: grid;
   grid-template-columns: 3fr 1fr;
 
@@ -79,4 +99,74 @@ body {
   grid-gap: 20px;
   /* align-items: center; */
   align-content: center;
+}
+
+/* footer */
+
+.footer {
+  background-color: pink;
+}
+
+
+/* home page */
+
+.home_wrapper {
+  background-image: url('../src/components/data/leaves.jpg');
+  /* width: 100vw;
+   */
+   background-size: cover; /* Resize the background image to cover the entire container */
+   height: 100vh;
+   color: #E0E1DD;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* typewriter effect */
+
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+/* html{
+  min-height: 100%;
+  overflow: hidden;
+} */
+/* body{
+  height: calc(100vh - 8em);
+  padding: 4em;
+  color: rgba(255,255,255,.75);
+  font-family: 'Anonymous Pro', monospace;  
+  background-color: rgb(25,25,25);  
+} */
+.line-1{
+    position: relative;
+    top: 50%;  
+    /* right: 30%; */
+    /* width: 24em; */
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%); 
+    font-family: monospace;   
+    background-color: navy;
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 100%}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
 }

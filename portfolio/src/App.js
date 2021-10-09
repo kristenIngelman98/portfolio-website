@@ -9,13 +9,25 @@ import About from '../src/about/About';
 import Home from '../src/home/Home';
 import Projects from '../src/projects/Projects';
 import Contact from '../src/contact/Contact';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 
 function App() {
   return (
     <Router>
       <div className="app">
-        <nav>
+      <div className="header">
+        <h1 className="main_title">Kristen Ingelman</h1>
+      {/*<div className="header_icons">
+          <a target="_blank" href="https://www.linkedin.com/in/kristen-ingelman/">
+              <LinkedInIcon />
+          </a>
+          <a target="_blank" href="https://github.com/kristenIngelman98">
+              <GitHubIcon />
+          </a>
+    </div> */}
+          <nav className="navigation_menu">
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -31,6 +43,17 @@ function App() {
             </li>
           </ul>
         </nav>
+  </div>
+
+    <div className="header_icons">
+          <a target="_blank" href="https://www.linkedin.com/in/kristen-ingelman/">
+              <LinkedInIcon />
+          </a>
+          <a target="_blank" href="https://github.com/kristenIngelman98">
+              <GitHubIcon />
+          </a>
+    </div>
+
       </div>
 
       {/* A <Switch> looks through its children <Route>s and

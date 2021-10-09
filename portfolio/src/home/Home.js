@@ -1,13 +1,17 @@
 import * as React from 'react';
-// import { Link } from "react-router-dom";
-// import { App } from '../App.css';
+import Button from '../components/Button';
+import App from '../App';
 
 function Home() {
     return (
         <div className="home_wrapper">
-            <div className="line-1 anim-typewriter">
+            <App />
+            {/*<div className="line-1 anim-typewriter">
                 <p>Hi there, nice to meet you! I am Kristen, a Front-End Developer.</p>
-            </div> 
+                
+    </div> */}
+            <h1>Hi there, welcome to my website!</h1>
+            <Button />
         </div>
     );
 }
